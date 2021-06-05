@@ -1,8 +1,4 @@
-﻿Imports System.Data.SqlClient
-Imports System.IO
-Imports DevExpress.XtraBars.Docking
-Imports DevExpress.XtraGrid.Views.Tile
-Imports DevExpress.XtraReports.Parameters
+﻿
 Imports MDIStudentSystem.Models
 Imports MDIStudentSystem.Repository.CommonRepository
 Imports MDIStudentSystem.Repository.Students
@@ -34,7 +30,7 @@ Namespace UI
             'Dim ID As Integer = TileViewStudentCards.GetFocusedRowCellValue("StudentID")
             '_studentModel.Id = CType(TileViewStudentCards.GetFocusedRowCellValue("StudentID"), Integer)
 
-
+            
 
             Dim studentData As New XFrmStudentData With {.MdiParent = MdiParent}
             DisplayValues(studentData)

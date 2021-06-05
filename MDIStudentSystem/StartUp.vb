@@ -1,12 +1,15 @@
 ﻿Imports MDIStudentSystem.UI
 
-Public Class StartUp
+Module StartUp
 
-    Public Shared Sub Main()
+    Public MyServer,MyDatabase as String
+
+    Public Sub Main()
 
         Application.EnableVisualStyles()
         Application.SetCompatibleTextRenderingDefault(False)
         Application.Run(New XFrmHomePage)
+
     End Sub
 
-End Class
+End Module

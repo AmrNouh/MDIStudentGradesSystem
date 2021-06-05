@@ -1,10 +1,5 @@
-﻿Imports System.Data.SqlClient
-Imports System.Drawing.Text
+﻿
 Imports System.IO
-Imports System.Net.Mime
-Imports DevExpress.Utils
-Imports DevExpress.XtraEditors
-Imports DevExpress.XtraPrinting.Native
 Imports MDIStudentSystem.Models
 Imports MDIStudentSystem.Repository.CommonRepository
 
@@ -73,7 +68,7 @@ Namespace Repository.Students
 
         Public Function IsRecordFoundByEmail(studentModel As IStudentModel) As Boolean Implements IStudentRepository.IsRecordFoundByEmail
 
-            Dim strCmd = "SELECT StudentID, FirstName, LastName, Email, Birthdate, City, [Image] FROM StudentsData where Email= @Email;"
+            Dim strCmd = "SELECT 1 FROM StudentsData where Email= @Email;"
 
             _sql.AddParameters("@Email", studentModel.EmailAddress)
 
@@ -102,7 +97,7 @@ Namespace Repository.Students
             Dim insertCmd As String = "INSERT INTO StudentsData (FirstName, LastName, Email, Birthdate, City,Image) VALUES (@FirstName, @LastName, @Email, @Birthdate, @City,@AvatarPic) ;"
 
             _sql.AddParameters("@FirstName", studentModel.FstName)
-            _sql.AddParameters("@LastName", studentModel.LstName)
+
             _sql.AddParameters("@Email", studentModel.EmailAddress)
             _sql.AddParameters("@Birthdate", studentModel.Birthdate)
             _sql.AddParameters("@City", studentModel.CityName)

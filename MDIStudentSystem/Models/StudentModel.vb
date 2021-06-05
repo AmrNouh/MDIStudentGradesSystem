@@ -1,4 +1,4 @@
-﻿Imports DevExpress.XtraEditors
+﻿
 Imports System.ComponentModel.DataAnnotations
 Imports MDIStudentSystem.CommonValidation
 
@@ -18,11 +18,12 @@ Namespace Models
         <Required(AllowEmptyStrings:=False, ErrorMessage:="LastName Can Not be Empty")>
         <DataType(DataType.Text, ErrorMessage:="LastName Must be only letter From A-Z or a-z")>
         <StringLength(40, MinimumLength:=3, ErrorMessage:="LastName Must be between 3 to 40 Characters")>
-        <RegularExpression("^[a-zA-Z''-'\s]{1,40}$", ErrorMessage:= "Characters are not allowed.")>
+        <RegularExpression("^[a-zA-Z'-'\s]{1,40}$", ErrorMessage:= "Characters are not allowed.")>
         Public Property LstName As String Implements IStudentModel.LstName
 
-        <Required(AllowEmptyStrings:=False, ErrorMessage:="Email Can Not be Empty")>
         <DataType(DataType.EmailAddress, ErrorMessage:="Invalid Email Address")>
+        <Required(AllowEmptyStrings:=False, ErrorMessage:="Email Can Not be Empty")>
+        <RegularExpression("^[a-zA-Z_.]+(@)[a-zA-Z]+(.)[A-Za-z]{1,5}$",ErrorMessage:="Invalid Email Address")>
         Public Property EmailAddress As String Implements IStudentModel.EmailAddress
         
         <Required(AllowEmptyStrings:=False, ErrorMessage:="City Name Can Not be Empty")>

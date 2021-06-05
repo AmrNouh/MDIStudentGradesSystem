@@ -74,6 +74,7 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.SQLServer.ManagedDTS, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="PresentationCore" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -112,6 +113,7 @@
     <Compile Include="CommonValidation\EntityValidator.vb" />
     <Compile Include="CommonValidation\IModelDataAnnotationCheck.vb" />
     <Compile Include="CommonValidation\ModelDataAnnotationCheck.vb" />
+    <Compile Include="CommonValidation\SQLControl.vb" />
     <Compile Include="CustomControls\CircularButton.vb">
       <SubType>Component</SubType>
     </Compile>
@@ -133,6 +135,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="Repository\CommonRepository\ConnectionManger.vb" />
     <Compile Include="Repository\CommonRepository\SqlFramework.vb" />
     <Compile Include="Repository\Grades\IStudentGradesRepository.vb" />
     <Compile Include="Repository\Grades\StudentGradesRepository.vb" />

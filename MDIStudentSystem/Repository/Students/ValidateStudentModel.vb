@@ -1,6 +1,5 @@
 ﻿Imports System.Text
 Imports MDIStudentSystem.Models
-Imports MDIStudentSystem.Repository.CommonRepository
 
 Namespace Repository.Students
     Public Class ValidateStudentModel

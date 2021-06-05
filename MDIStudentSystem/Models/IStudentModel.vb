@@ -1,4 +1,4 @@
-﻿Imports System.ComponentModel.DataAnnotations
+﻿
 
 Namespace Models
     Public interface IStudentModel

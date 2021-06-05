@@ -1,7 +1,5 @@
-﻿Imports System.Data.Sql
+﻿
 Imports System.Data.SqlClient
-Imports DevExpress.DataAccess
-Imports DevExpress.Office.Crypto
 
 Namespace Repository.CommonRepository
     Public Class SqlFramework

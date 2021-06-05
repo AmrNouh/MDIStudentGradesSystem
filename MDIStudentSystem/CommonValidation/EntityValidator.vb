@@ -1,6 +1,5 @@
 ﻿Imports System.ComponentModel
 Imports System.ComponentModel.DataAnnotations
-Imports DevExpress.Utils.Extensions
 
 Namespace CommonValidation
     Public Class EntityValidator
