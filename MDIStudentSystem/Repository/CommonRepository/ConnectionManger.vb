@@ -16,7 +16,7 @@ Namespace Repository.CommonRepository
         Private _databaseName As String = "AdventureWorks"  
         Private _connectionString As String = String.Empty  
   
-        Private Const CONNECTIONSTRING_TEMPLATE As String = _  
+        Private Const ConnectionstringTemplate As String = _  
             "Data Source=<servername>;Initial Catalog=<databasename>;Integrated Security=SSPI"  
   
         Public Property ServerName() As String  
@@ -49,7 +49,7 @@ Namespace Repository.CommonRepository
   
         Private Sub UpdateConnectionString()  
   
-            Dim temporaryString As String = CONNECTIONSTRING_TEMPLATE  
+            Dim temporaryString As String = ConnectionstringTemplate  
   
             If Not String.IsNullOrEmpty(_serverName) Then  
                 temporaryString = temporaryString.Replace("<servername>", _serverName)  

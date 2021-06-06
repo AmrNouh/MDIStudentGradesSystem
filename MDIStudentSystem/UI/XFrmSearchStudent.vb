@@ -47,7 +47,17 @@ Namespace UI
             xFrmStudentData.TxtCity.Text = CType(TileViewStudentCards.GetDataRow(TileViewStudentCards.FocusedRowHandle).Item("City"), String)
             xFrmStudentData.TxtBirthdate.Text = CType(TileViewStudentCards.GetFocusedRowCellValue("Birthdate"), String)
 
+            Dim pictureData As Byte() = _studentRepo.FetchImage(id)
+            Dim picture As Image = Nothing
+            
+            If pictureData Is Nothing Then Return : Exit Sub
 
+            Using stream As New IO.MemoryStream(pictureData)
+
+                picture = System.Drawing.Image.FromStream(stream)
+            End Using
+
+            xFrmStudentData.Avatar.Image = picture
         End Sub
 
 

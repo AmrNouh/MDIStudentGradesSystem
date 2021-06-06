@@ -8,7 +8,7 @@ Namespace UI
         Private ReadOnly _gradesModel As New GradesModel
         Private ReadOnly _studentGradesRepo As New StudentGradesRepository
         Private ReadOnly _validate As New ValidateStudentGradesModel
-        Private modelCheck As New ModelDataAnnotationCheck
+        Private _modelCheck As New ModelDataAnnotationCheck
 
         Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
 
@@ -42,11 +42,11 @@ Namespace UI
 
 
                 Try
-                    modelCheck.ValidateModel(_gradesModel)
+                    _modelCheck.ValidateModel(_gradesModel)
                 Catch ex As ArgumentException
                     'errorProvider.SetError(TxtFirstName,ex.Message)
                     MsgBox(ex.Message.ToString(), MsgBoxStyle.OkOnly, "Validation Error")
-                    modelCheck.sb.Clear()
+                    _modelCheck.Sb.Clear()
                     Exit Sub
                 End Try
 

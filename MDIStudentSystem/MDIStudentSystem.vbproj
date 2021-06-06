@@ -113,7 +113,7 @@
     <Compile Include="CommonValidation\EntityValidator.vb" />
     <Compile Include="CommonValidation\IModelDataAnnotationCheck.vb" />
     <Compile Include="CommonValidation\ModelDataAnnotationCheck.vb" />
-    <Compile Include="CommonValidation\SQLControl.vb" />
+    <Compile Include="Repository\CommonRepository\SQLControl.vb" />
     <Compile Include="CustomControls\CircularButton.vb">
       <SubType>Component</SubType>
     </Compile>

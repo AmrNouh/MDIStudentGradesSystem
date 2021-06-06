@@ -9,7 +9,7 @@ Namespace UI
         Private ReadOnly _studentModel As New StudentModel
         Private ReadOnly _studentRepo As New StudentRepository
         Private ReadOnly _validate As New ValidateStudentModel
-        Private modelCheck As new ModelDataAnnotationCheck
+        Private _modelCheck As new ModelDataAnnotationCheck
 
         Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
 
@@ -28,11 +28,11 @@ Namespace UI
             StudentModelBindingSource.EndEdit()
 
             Try
-                modelCheck.ValidateModel(_studentModel)
+                _modelCheck.ValidateModel(_studentModel)
             Catch ex As ArgumentException
                 'errorProvider.SetError(TxtFirstName,ex.Message)
                 MsgBox(ex.Message.ToString(), MsgBoxStyle.OkOnly, "Error")
-                modelCheck.sb.Clear()
+                _modelCheck.Sb.Clear()
                 Exit Sub
             End Try
 

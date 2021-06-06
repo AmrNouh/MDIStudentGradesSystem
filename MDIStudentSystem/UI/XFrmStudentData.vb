@@ -1,5 +1,6 @@
 ﻿
 Imports DevExpress.XtraEditors
+Imports MDIStudentSystem.CommonValidation
 Imports MDIStudentSystem.Models
 Imports MDIStudentSystem.Repository.Grades
 Imports MDIStudentSystem.Repository.Students
@@ -11,6 +12,7 @@ Namespace UI
         Private ReadOnly _gradesRepo As New StudentGradesRepository
         Private ReadOnly _studentModel As New StudentModel
         Private ReadOnly _validate As New ValidateStudentModel
+        Private _modelCheck As new ModelDataAnnotationCheck
 
         Private Sub XFrmStudentData_Load(sender As Object, e As EventArgs) Handles MyBase.Load
             XOFBrowseImage.InitialDirectory = Application.StartupPath
@@ -18,7 +20,7 @@ Namespace UI
             '_studentRepo.DrawingImage(Avatar, CType(lblShowID.Text, Integer))
         End Sub
 
-        Sub save()
+        Sub Save()
 
         End Sub
 
@@ -102,12 +104,22 @@ Namespace UI
                 _studentRepo.UploadImage(XOFBrowseImage.FileName, _studentModel.EmailAddress)
             End If
 
+
+            Try
+                _modelCheck.ValidateModel(_studentModel)
+            Catch ex As ArgumentException
+                'errorProvider.SetError(TxtFirstName,ex.Message)
+                MsgBox(ex.Message.ToString(), MsgBoxStyle.OkOnly, "Error")
+                _modelCheck.Sb.Clear()
+                Exit Sub
+            End Try
+
             If MsgBox($"Are You Sure You Want to Edit {TxtFirstName.Text} Info", MsgBoxStyle.OkCancel, "Confirmation") = MsgBoxResult.Ok Then
 
                 'Validate Fields
-                If _validate.IsValid(_studentModel) OrElse _validate.ErrorMessage.Length > 0 Then
+                'If _validate.IsValid(_studentModel) OrElse _validate.ErrorMessage.Length > 0 Then
 
-                    _validate.ErrorMessage.Clear()
+                '    _validate.ErrorMessage.Clear()
 
                     'Check If Student Exists
                     If _studentRepo.IsRecordFoundById(_studentModel) Then
@@ -129,10 +141,10 @@ Namespace UI
                     Else
                         MsgBox("This Record does Not Exist", MsgBoxStyle.OkOnly, "Not Found")
                     End If
-                Else
-                    MsgBox(_validate.ErrorMessage.ToString(), MsgBoxStyle.OkCancel, "Error")
-                    Exit Sub
-                End If
+                'Else
+                '    MsgBox(_validate.ErrorMessage.ToString(), MsgBoxStyle.OkCancel, "Error")
+                '    Exit Sub
+                'End If
             End If
         End Sub
 

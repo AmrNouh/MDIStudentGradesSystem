@@ -416,12 +416,12 @@
         Me.TileViewStudentCards.TileColumns.Add(TableColumnDefinition12)
         Me.TileViewStudentCards.TileColumns.Add(TableColumnDefinition13)
         Me.TileViewStudentCards.TileColumns.Add(TableColumnDefinition14)
-        TableRowDefinition7.Length.Value = 35R
-        TableRowDefinition8.Length.Value = 25R
-        TableRowDefinition9.Length.Value = 14R
+        TableRowDefinition7.Length.Value = 42R
+        TableRowDefinition8.Length.Value = 29R
+        TableRowDefinition9.Length.Value = 16R
         TableRowDefinition10.Length.Value = 23R
-        TableRowDefinition11.Length.Value = 23R
-        TableRowDefinition12.Length.Value = 31R
+        TableRowDefinition11.Length.Value = 24R
+        TableRowDefinition12.Length.Value = 48R
         TableRowDefinition13.Length.Value = 28R
         Me.TileViewStudentCards.TileRows.Add(TableRowDefinition7)
         Me.TileViewStudentCards.TileRows.Add(TableRowDefinition8)
