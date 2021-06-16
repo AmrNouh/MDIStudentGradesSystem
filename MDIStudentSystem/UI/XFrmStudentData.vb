@@ -1,4 +1,5 @@
 ﻿
+Imports System.IO
 Imports DevExpress.XtraEditors
 Imports MDIStudentSystem.CommonValidation
 Imports MDIStudentSystem.Models
@@ -12,7 +13,7 @@ Namespace UI
         Private ReadOnly _gradesRepo As New StudentGradesRepository
         Private ReadOnly _studentModel As New StudentModel
         Private ReadOnly _validate As New ValidateStudentModel
-        Private _modelCheck As new ModelDataAnnotationCheck
+        Private _modelCheck As New ModelDataAnnotationCheck
 
         Private Sub XFrmStudentData_Load(sender As Object, e As EventArgs) Handles MyBase.Load
             XOFBrowseImage.InitialDirectory = Application.StartupPath
@@ -100,6 +101,14 @@ Namespace UI
             _studentModel.CityName = TxtCity.Text
             _studentModel.Birthdate = CType(TxtBirthdate.Text, Date)
 
+            If (Not String.IsNullOrWhiteSpace(XOFBrowseImage.FileName)) Then
+                Dim img As Image = Image.FromFile(XOFBrowseImage.FileName)
+                Dim ms As New MemoryStream
+                img.Save(ms, img.RawFormat)
+                _studentModel.AvatarPic = ms.GetBuffer
+            End If
+
+
             If Not String.IsNullOrWhiteSpace(XOFBrowseImage.FileName) Then
                 _studentRepo.UploadImage(XOFBrowseImage.FileName, _studentModel.EmailAddress)
             End If
@@ -121,26 +130,26 @@ Namespace UI
 
                 '    _validate.ErrorMessage.Clear()
 
-                    'Check If Student Exists
-                    If _studentRepo.IsRecordFoundById(_studentModel) Then
+                'Check If Student Exists
+                If _studentRepo.IsRecordFoundById(_studentModel) Then
 
-                        'Update Record
-                        _studentRepo.Update(_studentModel)
-                        MsgBox("Information Updated Successfully", MsgBoxStyle.OkOnly, "Success")
-                        DisableFields()
+                    'Update Record
+                    _studentRepo.Update(_studentModel)
+                    MsgBox("Information Updated Successfully", MsgBoxStyle.OkOnly, "Success")
+                    DisableFields()
 
-                        'show
-                        btnDelete.Visible = True
-                        btnShowGrades.Visible = True
-                        btnEdit.Visible = True
+                    'show
+                    btnDelete.Visible = True
+                    btnShowGrades.Visible = True
+                    btnEdit.Visible = True
 
-                        'Hide 
-                        btnSave.Visible = False
-                        btnCancel.Visible = False
+                    'Hide 
+                    btnSave.Visible = False
+                    btnCancel.Visible = False
 
-                    Else
-                        MsgBox("This Record does Not Exist", MsgBoxStyle.OkOnly, "Not Found")
-                    End If
+                Else
+                    MsgBox("This Record does Not Exist", MsgBoxStyle.OkOnly, "Not Found")
+                End If
                 'Else
                 '    MsgBox(_validate.ErrorMessage.ToString(), MsgBoxStyle.OkCancel, "Error")
                 '    Exit Sub
@@ -178,5 +187,9 @@ Namespace UI
             GCStudentTable.DataSource = _gradesRepo.Search(_studentModel.Id)
         End Sub
 
+        Private Sub btnPrint_Click(sender As Object, e As EventArgs) Handles btnPrint.Click
+            Dim frmReports As New FrmStudentReports With {.MdiParent = MdiParent}
+            frmReports.Show()
+        End Sub
     End Class
 End Namespace

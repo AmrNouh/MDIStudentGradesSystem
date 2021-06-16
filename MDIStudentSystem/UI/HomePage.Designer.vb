@@ -60,7 +60,7 @@
         Me.btnStudentGrades.ImageOptions.Image = CType(resources.GetObject("btnStudentGrades.ImageOptions.Image"),System.Drawing.Image)
         Me.btnStudentGrades.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter
         Me.btnStudentGrades.ImageOptions.SvgImageSize = New System.Drawing.Size(32, 32)
-        Me.btnStudentGrades.Location = New System.Drawing.Point(0, 212)
+        Me.btnStudentGrades.Location = New System.Drawing.Point(0, 200)
         Me.btnStudentGrades.MinimumSize = New System.Drawing.Size(132, 50)
         Me.btnStudentGrades.Name = "btnStudentGrades"
         Me.btnStudentGrades.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light
@@ -78,7 +78,7 @@
         Me.btnAddStudent.Appearance.Options.UseForeColor = true
         Me.btnAddStudent.ImageOptions.Image = CType(resources.GetObject("btnAddStudent.ImageOptions.Image"),System.Drawing.Image)
         Me.btnAddStudent.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter
-        Me.btnAddStudent.Location = New System.Drawing.Point(0, 107)
+        Me.btnAddStudent.Location = New System.Drawing.Point(0, 101)
         Me.btnAddStudent.MinimumSize = New System.Drawing.Size(132, 50)
         Me.btnAddStudent.Name = "btnAddStudent"
         Me.btnAddStudent.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light

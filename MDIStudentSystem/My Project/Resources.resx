@@ -121,38 +121,14 @@
   <data name="icons8_students_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-students-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="GradesModel_StudentId_Please_Enter_Student_ID" xml:space="preserve">
-    <value>Please Enter Student ID</value>
+  <data name="icons8_grades_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-grades-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8_edit_account_50" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-edit-account-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="percentstyle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\percentstyle.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="icons8_user_100" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-user-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="GradesModel_SubjectGrade_The_Value_of_Subject_Grade_Can_Not_be_Zero" xml:space="preserve">
-    <value>The Value of Subject Grade Can Not be Zero</value>
-  </data>
-  <data name="icons8_grades_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-grades-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8_student_registration_50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-student-registration-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="GradesModel_StudentGrade_Please_Enter_Student_Grade" xml:space="preserve">
     <value>Please Enter Student Grade</value>
-  </data>
-  <data name="icons8_student_registration_100" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-student-registration-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="GradesModel_StudentGrade_The_Value_of_Student_Grade_Can_Not_be_Greater_The_Subject_Grade" xml:space="preserve">
-    <value>The Value of Student Grade Can Not be Greater The Subject Grade</value>
-  </data>
-  <data name="icons8_search_client_50" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-search-client-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="kisspng-computer-icons-student-school-student-5abd018f3c5316.0501198915223361432471" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\kisspng-computer-icons-student-school-student-5abd018f3c5316.0501198915223361432471.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="GradesModel_SubjectName_Please_Choose_Subject_Name" xml:space="preserve">
     <value>Please Choose Subject Name</value>
@@ -160,37 +136,70 @@
   <data name="icons8_student_registration_240" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-student-registration-240.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8_plus_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-plus-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="kisspng-computer-icons-student-school-student-5abd018f3c5316.0501198915223361432471" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kisspng-computer-icons-student-school-student-5abd018f3c5316.0501198915223361432471.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8_student_male_100" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-student-male-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="GradesModel_StudentGrade_The_Value_of_Student_Grade_Can_Not_be_Greater_The_Subject_Grade" xml:space="preserve">
+    <value>The Value of Student Grade Can Not be Greater The Subject Grade</value>
   </data>
-  <data name="icons8_grades_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-grades-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="GradesModel_StudentId_Value_of_Id_Can_Not_be_Zero" xml:space="preserve">
-    <value>Value of Id Can Not be Zero</value>
-  </data>
-  <data name="icons8_grades_50__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-grades-50 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="printer_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\printer_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8_school_100" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-school-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icons8_grades_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-grades-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="insertlistbox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\insertlistbox.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="percentstyle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\percentstyle.svg;DevExpress.Utils.Svg.SvgImage, DevExpress.Data.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
   <data name="GradesModel_SubjectGrade_Please_Enter_Subject_Grade" xml:space="preserve">
     <value>Please Enter Subject Grade</value>
-  </data>
-  <data name="icons8_security_pass_50" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-security-pass-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8_school_40" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-school-40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8_student_registration_50" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-student-registration-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8_plus_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-plus-64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="zoom_32x32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\zoom_32x32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_grades_50__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-grades-50 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GradesModel_StudentId_Value_of_Id_Can_Not_be_Zero" xml:space="preserve">
+    <value>Value of Id Can Not be Zero</value>
+  </data>
+  <data name="icons8_student_registration_100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-student-registration-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_edit_account_50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-edit-account-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GradesModel_SubjectGrade_The_Value_of_Subject_Grade_Can_Not_be_Zero" xml:space="preserve">
+    <value>The Value of Subject Grade Can Not be Zero</value>
+  </data>
+  <data name="icons8_user_100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-user-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_student_male_100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-student-male-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_search_client_50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-search-client-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GradesModel_StudentId_Please_Enter_Student_ID" xml:space="preserve">
+    <value>Please Enter Student ID</value>
+  </data>
+  <data name="icons8_security_pass_50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-security-pass-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="printer_32x321" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\printer_32x321.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

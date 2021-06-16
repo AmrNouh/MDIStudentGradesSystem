@@ -22,11 +22,13 @@
         Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(XFrmStudentData))
         Me.pShowStudentInfo = New DevExpress.XtraEditors.PanelControl()
+        Me.btnPrint = New DevExpress.XtraEditors.SimpleButton()
         Me.btnShowGrades = New DevExpress.XtraEditors.SimpleButton()
         Me.btnEdit = New DevExpress.XtraEditors.SimpleButton()
         Me.GCIdContainer = New DevExpress.XtraEditors.GroupControl()
         Me.lblShowID = New DevExpress.XtraEditors.LabelControl()
         Me.lblTextId = New DevExpress.XtraEditors.LabelControl()
+        Me.btnBrowsePic = New MDIStudentSystem.CustomControls.CircularButton()
         Me.TxtLastName = New DevExpress.XtraEditors.TextEdit()
         Me.TxtCity = New DevExpress.XtraEditors.TextEdit()
         Me.TxtEmail = New DevExpress.XtraEditors.TextEdit()
@@ -36,20 +38,19 @@
         Me.lblCity = New DevExpress.XtraEditors.LabelControl()
         Me.lblEmail = New DevExpress.XtraEditors.LabelControl()
         Me.lblFirstName = New DevExpress.XtraEditors.LabelControl()
+        Me.Avatar = New MDIStudentSystem.CircularPictureBox()
         Me.TxtBirthdate = New DevExpress.XtraEditors.DateEdit()
         Me.btnCancel = New DevExpress.XtraEditors.SimpleButton()
         Me.btnDelete = New DevExpress.XtraEditors.SimpleButton()
         Me.btnSave = New DevExpress.XtraEditors.SimpleButton()
         Me.pcShowStudentGrades = New DevExpress.XtraEditors.PanelControl()
-        Me.XOFBrowseImage = New System.Windows.Forms.OpenFileDialog()
-        Me.btnBrowsePic = New MDIStudentSystem.CustomControls.CircularButton()
-        Me.Avatar = New MDIStudentSystem.CircularPictureBox()
         Me.GCStudentTable = New DevExpress.XtraGrid.GridControl()
         Me.GVStudentGrades = New DevExpress.XtraGrid.Views.Grid.GridView()
         Me.colSubjectName = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.colSubjectGrade = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.colStudentGrade = New DevExpress.XtraGrid.Columns.GridColumn()
         Me.colPercent = New DevExpress.XtraGrid.Columns.GridColumn()
+        Me.XOFBrowseImage = New System.Windows.Forms.OpenFileDialog()
         CType(Me.pShowStudentInfo,System.ComponentModel.ISupportInitialize).BeginInit
         Me.pShowStudentInfo.SuspendLayout
         CType(Me.GCIdContainer,System.ComponentModel.ISupportInitialize).BeginInit
@@ -58,11 +59,11 @@
         CType(Me.TxtCity.Properties,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.TxtEmail.Properties,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.TxtFirstName.Properties,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.Avatar,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.TxtBirthdate.Properties.CalendarTimeProperties,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.TxtBirthdate.Properties,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.pcShowStudentGrades,System.ComponentModel.ISupportInitialize).BeginInit
         Me.pcShowStudentGrades.SuspendLayout
-        CType(Me.Avatar,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.GCStudentTable,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.GVStudentGrades,System.ComponentModel.ISupportInitialize).BeginInit
         Me.SuspendLayout
@@ -71,6 +72,7 @@
         '
         Me.pShowStudentInfo.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.pShowStudentInfo.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder
+        Me.pShowStudentInfo.Controls.Add(Me.btnPrint)
         Me.pShowStudentInfo.Controls.Add(Me.btnShowGrades)
         Me.pShowStudentInfo.Controls.Add(Me.btnEdit)
         Me.pShowStudentInfo.Controls.Add(Me.GCIdContainer)
@@ -96,6 +98,41 @@
         Me.pShowStudentInfo.Name = "pShowStudentInfo"
         Me.pShowStudentInfo.Size = New System.Drawing.Size(649, 768)
         Me.pShowStudentInfo.TabIndex = 0
+        '
+        'btnPrint
+        '
+        Me.btnPrint.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom),System.Windows.Forms.AnchorStyles)
+        Me.btnPrint.Appearance.BackColor = System.Drawing.Color.Transparent
+        Me.btnPrint.Appearance.Font = New System.Drawing.Font("Dexef", 12!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.btnPrint.Appearance.Options.UseBackColor = true
+        Me.btnPrint.Appearance.Options.UseFont = true
+        Me.btnPrint.Appearance.Options.UseTextOptions = true
+        Me.btnPrint.Appearance.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap
+        Me.btnPrint.AppearanceHovered.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Success
+        Me.btnPrint.AppearanceHovered.BackColor2 = DevExpress.LookAndFeel.DXSkinColors.FillColors.Success
+        Me.btnPrint.AppearanceHovered.Font = New System.Drawing.Font("Dexef", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.btnPrint.AppearanceHovered.ForeColor = System.Drawing.Color.White
+        Me.btnPrint.AppearanceHovered.Options.UseBackColor = true
+        Me.btnPrint.AppearanceHovered.Options.UseFont = true
+        Me.btnPrint.AppearanceHovered.Options.UseForeColor = true
+        Me.btnPrint.AppearanceHovered.Options.UseTextOptions = true
+        Me.btnPrint.AppearanceHovered.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap
+        Me.btnPrint.AppearancePressed.BackColor = DevExpress.LookAndFeel.DXSkinColors.FillColors.Success
+        Me.btnPrint.AppearancePressed.BackColor2 = DevExpress.LookAndFeel.DXSkinColors.FillColors.Success
+        Me.btnPrint.AppearancePressed.Font = New System.Drawing.Font("Dexef", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.btnPrint.AppearancePressed.Options.UseBackColor = true
+        Me.btnPrint.AppearancePressed.Options.UseFont = true
+        Me.btnPrint.AppearancePressed.Options.UseTextOptions = true
+        Me.btnPrint.AppearancePressed.TextOptions.WordWrap = DevExpress.Utils.WordWrap.NoWrap
+        Me.btnPrint.ImageOptions.Image = Global.MDIStudentSystem.My.Resources.Resources.printer_32x321
+        Me.btnPrint.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter
+        Me.btnPrint.ImageOptions.SvgImageSize = New System.Drawing.Size(25, 25)
+        Me.btnPrint.Location = New System.Drawing.Point(45, 670)
+        Me.btnPrint.LookAndFeel.UseDefaultLookAndFeel = false
+        Me.btnPrint.Name = "btnPrint"
+        Me.btnPrint.Size = New System.Drawing.Size(548, 43)
+        Me.btnPrint.TabIndex = 20
+        Me.btnPrint.Text = "Print"
         '
         'btnShowGrades
         '
@@ -224,6 +261,22 @@
         Me.lblTextId.TabIndex = 0
         Me.lblTextId.Text = "ID"
         '
+        'btnBrowsePic
+        '
+        Me.btnBrowsePic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnBrowsePic.Cursor = System.Windows.Forms.Cursors.Default
+        Me.btnBrowsePic.Enabled = false
+        Me.btnBrowsePic.FlatAppearance.BorderSize = 0
+        Me.btnBrowsePic.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnBrowsePic.Image = CType(resources.GetObject("btnBrowsePic.Image"),System.Drawing.Image)
+        Me.btnBrowsePic.Location = New System.Drawing.Point(331, 174)
+        Me.btnBrowsePic.MaximumSize = New System.Drawing.Size(64, 64)
+        Me.btnBrowsePic.MinimumSize = New System.Drawing.Size(64, 64)
+        Me.btnBrowsePic.Name = "btnBrowsePic"
+        Me.btnBrowsePic.Size = New System.Drawing.Size(64, 64)
+        Me.btnBrowsePic.TabIndex = 18
+        Me.btnBrowsePic.UseVisualStyleBackColor = true
+        '
         'TxtLastName
         '
         Me.TxtLastName.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom),System.Windows.Forms.AnchorStyles)
@@ -348,6 +401,25 @@
         Me.lblFirstName.Size = New System.Drawing.Size(80, 20)
         Me.lblFirstName.TabIndex = 14
         Me.lblFirstName.Text = "FirstName"
+        '
+        'Avatar
+        '
+        Me.Avatar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom),System.Windows.Forms.AnchorStyles)
+        Me.Avatar.BackColor = System.Drawing.Color.Transparent
+        Me.Avatar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Avatar.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Avatar.Enabled = false
+        Me.Avatar.ErrorImage = CType(resources.GetObject("Avatar.ErrorImage"),System.Drawing.Image)
+        Me.Avatar.Image = CType(resources.GetObject("Avatar.Image"),System.Drawing.Image)
+        Me.Avatar.InitialImage = CType(resources.GetObject("Avatar.InitialImage"),System.Drawing.Image)
+        Me.Avatar.Location = New System.Drawing.Point(234, 58)
+        Me.Avatar.MaximumSize = New System.Drawing.Size(180, 180)
+        Me.Avatar.MinimumSize = New System.Drawing.Size(180, 180)
+        Me.Avatar.Name = "Avatar"
+        Me.Avatar.Size = New System.Drawing.Size(180, 180)
+        Me.Avatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.Avatar.TabIndex = 8
+        Me.Avatar.TabStop = false
         '
         'TxtBirthdate
         '
@@ -494,46 +566,6 @@
         Me.pcShowStudentGrades.TabIndex = 0
         Me.pcShowStudentGrades.Visible = false
         '
-        'XOFBrowseImage
-        '
-        Me.XOFBrowseImage.Filter = "PNG|*.PNG|JPEG|*.JPG"
-        Me.XOFBrowseImage.Title = "Browes Image"
-        '
-        'btnBrowsePic
-        '
-        Me.btnBrowsePic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btnBrowsePic.Cursor = System.Windows.Forms.Cursors.Default
-        Me.btnBrowsePic.Enabled = false
-        Me.btnBrowsePic.FlatAppearance.BorderSize = 0
-        Me.btnBrowsePic.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnBrowsePic.Image = CType(resources.GetObject("btnBrowsePic.Image"),System.Drawing.Image)
-        Me.btnBrowsePic.Location = New System.Drawing.Point(331, 174)
-        Me.btnBrowsePic.MaximumSize = New System.Drawing.Size(64, 64)
-        Me.btnBrowsePic.MinimumSize = New System.Drawing.Size(64, 64)
-        Me.btnBrowsePic.Name = "btnBrowsePic"
-        Me.btnBrowsePic.Size = New System.Drawing.Size(64, 64)
-        Me.btnBrowsePic.TabIndex = 18
-        Me.btnBrowsePic.UseVisualStyleBackColor = true
-        '
-        'Avatar
-        '
-        Me.Avatar.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom),System.Windows.Forms.AnchorStyles)
-        Me.Avatar.BackColor = System.Drawing.Color.Transparent
-        Me.Avatar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Avatar.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Avatar.Enabled = false
-        Me.Avatar.ErrorImage = CType(resources.GetObject("Avatar.ErrorImage"),System.Drawing.Image)
-        Me.Avatar.Image = CType(resources.GetObject("Avatar.Image"),System.Drawing.Image)
-        Me.Avatar.InitialImage = CType(resources.GetObject("Avatar.InitialImage"),System.Drawing.Image)
-        Me.Avatar.Location = New System.Drawing.Point(234, 58)
-        Me.Avatar.MaximumSize = New System.Drawing.Size(180, 180)
-        Me.Avatar.MinimumSize = New System.Drawing.Size(180, 180)
-        Me.Avatar.Name = "Avatar"
-        Me.Avatar.Size = New System.Drawing.Size(180, 180)
-        Me.Avatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.Avatar.TabIndex = 8
-        Me.Avatar.TabStop = false
-        '
         'GCStudentTable
         '
         Me.GCStudentTable.Dock = System.Windows.Forms.DockStyle.Fill
@@ -676,6 +708,11 @@
         Me.colPercent.VisibleIndex = 3
         Me.colPercent.Width = 94
         '
+        'XOFBrowseImage
+        '
+        Me.XOFBrowseImage.Filter = "PNG|*.PNG|JPEG|*.JPG"
+        Me.XOFBrowseImage.Title = "Browes Image"
+        '
         'XFrmStudentData
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7!, 16!)
@@ -685,7 +722,7 @@
         Me.Controls.Add(Me.pShowStudentInfo)
         Me.IconOptions.SvgImage = CType(resources.GetObject("XFrmStudentData.IconOptions.SvgImage"),DevExpress.Utils.Svg.SvgImage)
         Me.Location = New System.Drawing.Point(1289, 808)
-        Me.MaximumSize = New System.Drawing.Size(1289, 808)
+        Me.MaximumSize = New System.Drawing.Size(1303, 810)
         Me.Name = "XFrmStudentData"
         Me.Text = "Student Data"
         CType(Me.pShowStudentInfo,System.ComponentModel.ISupportInitialize).EndInit
@@ -696,11 +733,11 @@
         CType(Me.TxtCity.Properties,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.TxtEmail.Properties,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.TxtFirstName.Properties,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.Avatar,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.TxtBirthdate.Properties.CalendarTimeProperties,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.TxtBirthdate.Properties,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.pcShowStudentGrades,System.ComponentModel.ISupportInitialize).EndInit
         Me.pcShowStudentGrades.ResumeLayout(false)
-        CType(Me.Avatar,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.GCStudentTable,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.GVStudentGrades,System.ComponentModel.ISupportInitialize).EndInit
         Me.ResumeLayout(false)
@@ -736,5 +773,6 @@ End Sub
         Friend WithEvents colSubjectGrade As DevExpress.XtraGrid.Columns.GridColumn
         Friend WithEvents colStudentGrade As DevExpress.XtraGrid.Columns.GridColumn
         Friend WithEvents colPercent As DevExpress.XtraGrid.Columns.GridColumn
+        Friend WithEvents btnPrint As DevExpress.XtraEditors.SimpleButton
     End Class
 End NameSpace

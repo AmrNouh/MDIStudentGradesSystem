@@ -3,7 +3,7 @@
 Namespace UI
 
     Public Class XFrmHomePage
-
+         
         Private Sub btnAddStudent_Click(sender As Object, e As EventArgs) Handles btnAddStudent.Click
 
             Dim frmAddStudent As New XFrmAddStudent With {.MdiParent = Me}
@@ -25,5 +25,6 @@ Namespace UI
             Dim frmSearchForStudent As New XFrmSearchStudent With {.MdiParent = Me}
             frmSearchForStudent.Show()
         End Sub
+
     End Class
 End Namespace
