@@ -25,6 +25,9 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <ErrorReport>prompt</ErrorReport>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -34,6 +37,9 @@
     <DefineDebug>false</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <ErrorReport>prompt</ErrorReport>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
     <MyType>Console</MyType>
@@ -43,37 +49,39 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DevExpress.BonusSkins.v20.2" />
-    <Reference Include="DevExpress.CodeParser.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.CodeParser.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Data.v20.2" />
     <Reference Include="DevExpress.Data.Desktop.v20.2" />
-    <Reference Include="DevExpress.DataAccess.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Dialogs.v20.2.Core, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Office.v20.2.Core, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.RichEdit.v20.2.Core, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Dialogs.v20.2.Core, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v20.2.Core, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v20.2.Core, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Utils.v20.2" />
     <Reference Include="DevExpress.Sparkline.v20.2.Core" />
-    <Reference Include="DevExpress.Xpo.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraBars.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraDialogs.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraDialogs.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v20.2" />
     <Reference Include="DevExpress.Printing.v20.2.Core" />
-    <Reference Include="DevExpress.XtraGrid.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraLayout.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraPrinting.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraTreeList.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraVerticalGrid.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraLayout.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v20.2, Version=20.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="PresentationCore" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Entity" />
     <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Remoting" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.ServiceModel" />
@@ -86,6 +94,8 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
@@ -99,6 +109,9 @@
     <Import Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommonValidation\EntityValidator.vb" />
+    <Compile Include="CommonValidation\IModelDataAnnotationCheck.vb" />
+    <Compile Include="CommonValidation\ModelDataAnnotationCheck.vb" />
     <Compile Include="CustomControls\CircularButton.vb">
       <SubType>Component</SubType>
     </Compile>
@@ -111,6 +124,8 @@
     <Compile Include="CustomControls\CutomTileGridViewControl.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Models\GradesModel.vb" />
+    <Compile Include="Models\IStudentModel.vb" />
     <Compile Include="Models\StudentModel.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -119,26 +134,13 @@
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="Repository\CommonRepository\SqlFramework.vb" />
-    <Compile Include="Repository\CommonRepository\ValidateModels.vb" />
+    <Compile Include="Repository\Grades\IStudentGradesRepository.vb" />
+    <Compile Include="Repository\Grades\StudentGradesRepository.vb" />
+    <Compile Include="Repository\Grades\ValidateStudentGradesModel.vb" />
     <Compile Include="Repository\Students\ValidateStudentModel.vb" />
     <Compile Include="Repository\Students\IStudentRepository.vb" />
     <Compile Include="Repository\Students\StudentRepository.vb" />
     <Compile Include="StartUp.vb" />
-    <Compile Include="StudentsDataSet.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>StudentsDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="StudentsDataSet1.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>StudentsDataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="StudentsDataSet2.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>StudentsDataSet2.xsd</DependentUpon>
-    </Compile>
     <Compile Include="UI\HomePage.Designer.vb">
       <DependentUpon>HomePage.vb</DependentUpon>
     </Compile>
@@ -199,6 +201,7 @@
     <EmbeddedResource Include="UI\XFrmStudentGrades.resx">
       <DependentUpon>XFrmStudentGrades.vb</DependentUpon>
     </EmbeddedResource>
+    <None Include="My Project\DataSources\MDIStudentSystem.Models.StudentModel.datasource" />
     <None Include="My Project\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
@@ -210,39 +213,6 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <None Include="packages.config" />
-    <None Include="StudentsDataSet.xsc">
-      <DependentUpon>StudentsDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="StudentsDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>StudentsDataSet.Designer.vb</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="StudentsDataSet.xss">
-      <DependentUpon>StudentsDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="StudentsDataSet1.xsc">
-      <DependentUpon>StudentsDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="StudentsDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>StudentsDataSet1.Designer.vb</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="StudentsDataSet1.xss">
-      <DependentUpon>StudentsDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="StudentsDataSet2.xsc">
-      <DependentUpon>StudentsDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="StudentsDataSet2.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>StudentsDataSet2.Designer.vb</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="StudentsDataSet2.xss">
-      <DependentUpon>StudentsDataSet2.xsd</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="My Project\Application.myapp">
@@ -251,10 +221,65 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Repository\Grades\" />
+    <None Include="Resources\kisspng-computer-icons-student-school-student-5abd018f3c5316.0501198915223361432471.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="SpecificValidation\GardesModelValidation\" />
+    <Folder Include="SpecificValidation\StudentModelValidation\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-edit-account-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-grades-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-grades-50 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-grades-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-plus-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-school-40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-school-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-client-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-security-pass-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-student-registration-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-student-registration-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-student-registration-240.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-students-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-student-male-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\percentstyle.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoom_32x32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
